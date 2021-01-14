@@ -11,6 +11,7 @@ cd docs/.vuepress/dist
 
 # deploy to github
 # echo 'b.xugaoyi.com' > CNAME
+git init
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:zhiliang-dev/zhiliangBlog.git
@@ -20,7 +21,6 @@ else
   git config user.name "canguang.liu"
   git config user.email "canguang.liu@unre.com"
 fi
-git init
 git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
@@ -37,8 +37,6 @@ if [ -z "$GITEE_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TO
 else
   msg='来自gitee actions的自动部署'
   codingUrl=https://bluetone:${GITEE_TOKEN}@gitee.com:bluetone/bluetone.git
-  git config user.name "bluetone"
-  git config user.email "18737181235@163.com"
 fi
 # echo "======111="
 # git status

@@ -29,16 +29,15 @@ jobs: # 工作流
           CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         run: npm install && npm run deploy
-
       - name: Build Gitee Pages
-      uses: yanglbme/gitee-pages-action@master
-      with:
-        # 注意替换为你的 Gitee 用户名
-        gitee-username: ${{ secrets.GITEE_USERNAME }}
-        # 注意在 Settings->Secrets 配置
-        gitee-password: ${{ secrets.GITEE_PASSWORD }}
-        # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
-        gitee-repo: bluetone/bluetone
+        uses: yanglbme/gitee-pages-action@master
+        with:
+          # 注意替换为你的 Gitee 用户名
+          gitee-username: ${{ secrets.GITEE_USERNAME }}
+          # 注意在 Settings->Secrets 配置
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+          gitee-repo: bluetone/bluetone
 
       # - name: Build and Deploy # 步骤3 （只提交到github可以使用这个步骤）
       #   uses: JamesIves/github-pages-deploy-action@master # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action

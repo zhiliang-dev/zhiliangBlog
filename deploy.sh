@@ -16,9 +16,9 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:zhiliang-dev/zhiliangBlog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/xugaoyi/vuepress-theme-vdoing.git
-  git config --global user.name "xugaoyi"
-  git config --global user.email "894072666@qq.com"
+  githubUrl=https:zhiliang-dev//:${GITHUB_TOKEN}@github.com:zhiliang-dev/zhiliangBlog.git
+  git config user.name "canguang.liu"
+  git config user.email "canguang.liu@unre.com"
 fi
 git init
 git add -A
@@ -29,13 +29,23 @@ git push -f $githubUrl master:gh-pages # 推送到github
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
 # echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
 
-if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+if [ -z "$GITEE_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+  msg='gitee deploy'
   codingUrl=git@gitee.com:bluetone/bluetone.git
+  git config user.name "canguang.liu"
+  git config user.email "canguang.liu@unre.com"
 else
-  codingUrl=https://HmuzsGrGQX:${CODING_TOKEN}@e.coding.net/xgy/xgy.git
+  msg='来自gitee actions的自动部署'
+  codingUrl=https://bluetone:${GITEE_TOKEN}@gitee.com:bluetone/bluetone.git
+  git config user.name "bluetone"
+  git config user.email "18737181235@163.com"
 fi
-git add -A
-git commit -m "${msg}"
+# echo "======111="
+# git status
+# git add -A
+# echo "======111222="+msg
+# git commit -m "${msg}"
+# echo "======222="
 git push -f $codingUrl master # 推送到coding
 
 cd - # 退回开始所在目录

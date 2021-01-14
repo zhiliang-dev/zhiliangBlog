@@ -17,7 +17,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:zhiliang-dev/zhiliangBlog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https:zhiliang-dev//:${GITHUB_TOKEN}@github.com:zhiliang-dev/zhiliangBlog.git
+  githubUrl=https://zhiliang-dev:${GITHUB_TOKEN}@github.com:zhiliang-dev/zhiliangBlog.git
   git config user.name "canguang.liu"
   git config user.email "canguang.liu@unre.com"
 fi
@@ -38,12 +38,6 @@ else
   msg='来自gitee actions的自动部署'
   codingUrl=https://bluetone:${GITEE_TOKEN}@gitee.com:bluetone/bluetone.git
 fi
-# echo "======111="
-# git status
-# git add -A
-# echo "======111222="+msg
-# git commit -m "${msg}"
-# echo "======222="
 git push -f $codingUrl master # 推送到coding
 
 cd - # 退回开始所在目录

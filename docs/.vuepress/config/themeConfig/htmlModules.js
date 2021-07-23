@@ -19,8 +19,8 @@
  */
 
 module.exports = {
-  homeSidebarB:
-    `<!-- 纵向自适应 -->
+    homeSidebarB:
+        `<!-- 纵向自适应 -->
     <ins class="adsbygoogle"
         style="display:block;padding: 0.95rem;"
         data-ad-client="ca-pub-7828333725993554"
@@ -30,17 +30,17 @@ module.exports = {
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>`,
-  // sidebarT:
-  //   `<!--  固定100% * 150px可显示，max-height:150px 未见显示-->
-  //   <ins class="adsbygoogle"
-  //         style="display:inline-block;width:100%;max-height:150px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  sidebarB:
-    `<!-- 正方形 -->
+    // sidebarT:
+    //   `<!--  固定100% * 150px可显示，max-height:150px 未见显示-->
+    //   <ins class="adsbygoogle"
+    //         style="display:inline-block;width:100%;max-height:150px"
+    //         data-ad-client="ca-pub-7828333725993554"
+    //         data-ad-slot="6625304284"></ins>
+    //     <script>
+    //         (adsbygoogle = window.adsbygoogle || []).push({});
+    //     </script>`,
+    sidebarB:
+        `<!-- 正方形 -->
       <ins class="adsbygoogle"
           style="display:block"
           data-ad-client="ca-pub-7828333725993554"
@@ -50,8 +50,8 @@ module.exports = {
       <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>`,
-  pageT:
-    `<!-- 固定100% * 90px可显示，max-height:90px未见显示-->
+    pageT:
+        `<!-- 固定100% * 90px可显示，max-height:90px未见显示-->
      <ins class="adsbygoogle"
           style="display:inline-block;width:100%;max-height:90px"
           data-ad-client="ca-pub-7828333725993554"
@@ -59,9 +59,9 @@ module.exports = {
       <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>`,
-  // pageTshowMode: 'article',
-  pageB:
-    `<!-- 横向自适应 -->
+    // pageTshowMode: 'article',
+    pageB:
+        `<!-- 横向自适应 -->
       <ins class="adsbygoogle"
           style="display:block"
           data-ad-client="ca-pub-7828333725993554"
@@ -71,19 +71,19 @@ module.exports = {
       <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>`,
-  // pageBshowMode: 'article',
-  // windowLB: // 会遮挡部分侧边栏
-  //   `<!-- 固定200*200px -->
-  //     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  //     <ins class="adsbygoogle"
-  //         style="display:inline-block;width:200px;height:200px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  windowRB:
-     `<!-- 固定160*160px -->
+    // pageBshowMode: 'article',
+    // windowLB: // 会遮挡部分侧边栏
+    //   `<!-- 固定200*200px -->
+    //     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    //     <ins class="adsbygoogle"
+    //         style="display:inline-block;width:200px;height:200px"
+    //         data-ad-client="ca-pub-7828333725993554"
+    //         data-ad-slot="6625304284"></ins>
+    //     <script>
+    //         (adsbygoogle = window.adsbygoogle || []).push({});
+    //     </script>`,
+    windowRB:
+        `<!-- 固定160*160px -->
       <ins class="adsbygoogle"
           style="display:inline-block;max-width:160px;max-height:160px"
           data-ad-client="ca-pub-7828333725993554"
@@ -92,7 +92,7 @@ module.exports = {
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
       `,
-}
+};
 
 
 // module.exports = {

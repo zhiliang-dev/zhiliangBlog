@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 3.x.x
+ * @Author: canguang.liu
+ * @Date: 2021-01-12 19:20:23
+ * @LastEditors: canguang.liu
+ * @LastEditTime: 2021-11-02 10:12:36
+ */
 const nav = require('./themeConfig/nav.js');
 const htmlModules = require('./themeConfig/htmlModules.js');
 
@@ -51,7 +59,6 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    // avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
     avatar: 'https://cdn.jsdelivr.net/gh/zhiliang-dev/image_store@main/Blob/aa.jpeg',
     name: 'BlueTone',
     slogan: '死亡如风,常伴吾身~',
@@ -60,11 +67,6 @@ module.exports = {
     // 社交图标，显示于博主信息栏和页脚栏
     // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
     icons: [
-      {
-        iconClass: 'icon-youjian',
-        title: '发邮件',
-        link: 'mailto:2575863363@qq.com',
-      },
       {
         iconClass: 'icon-github',
         title: 'GitHub',
@@ -80,8 +82,8 @@ module.exports = {
   footer: {
     // 页脚信息
     createYear: 2019, // 博客创建年份
-    copyrightInfo:
-      'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+    // copyrightInfo:
+    //   'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },
-  htmlModules // 插入hmtl(广告)模块
+  // htmlModules // 插入hmtl(广告)模块
 };

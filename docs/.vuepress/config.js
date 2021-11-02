@@ -4,7 +4,7 @@
  * @Author: canguang.liu
  * @Date: 2021-01-12 19:20:23
  * @LastEditors: canguang.liu
- * @LastEditTime: 2021-08-16 13:58:33
+ * @LastEditTime: 2021-11-02 10:18:59
  */
 const head = require('./config/head.js');
 const plugins = require('./config/plugins.js');
@@ -16,8 +16,8 @@ module.exports = {
 
   title: "BlueTone's blog",
   description: 'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。',
-  // base: '/', // 格式：'/<仓库名>/'， 默认'/'
-  base: '/zhiliangBlog/', // 格式：'/<仓库名>/'
+  base: '/', // 格式：'/<仓库名>/'， 默认'/'
+  // base: '/zhiliangBlog/', // 格式：'/<仓库名>/'
   markdown: {
     lineNumbers: true, // 代码行号
   },

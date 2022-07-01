@@ -22,6 +22,7 @@
     <template v-if="footer">
       | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
       <span v-html="footer.copyrightInfo"></span>
+      <!-- <span v-html="footer.beian"></span> -->
     </template>
   </div>
 </template>

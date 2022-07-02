@@ -40,7 +40,7 @@ module.exports = {
   //   '图标地址1',
   //   '图标地址2'
   // ],
-  contentBgStyle: 5, // 文章内容块的背景风格，默认无. 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
+  contentBgStyle: 6, // 文章内容块的背景风格，默认无. 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
 
   // updateBar: { // 最近更新栏
   //   showToArticle: true, // 显示到文章页底部，默认true
@@ -59,7 +59,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://cdn.jsdelivr.net/gh/zhiliang-dev/image_store@main/Blob/aa.jpeg',
+    avatar: 'https://img1.imgtp.com/2022/07/02/owdgkVCu.jpg',
     name: 'BlueTone',
     slogan: '死亡如风,常伴吾身~',
   },

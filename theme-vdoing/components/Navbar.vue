@@ -100,8 +100,8 @@ $navbar-horizontal-padding = 1.5rem
     height $navbarHeight - 1.4rem
     min-width $navbarHeight - 1.4rem
     margin-right 0.8rem
+    border-radius 5px
     vertical-align top
-    border-radius 0.3125rem
   .site-name
     font-size 1.3rem
     font-weight 600

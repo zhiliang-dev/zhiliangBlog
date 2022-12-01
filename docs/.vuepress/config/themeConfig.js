@@ -59,7 +59,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://img1.imgtp.com/2022/07/02/owdgkVCu.jpg',
+    avatar: 'http://resource.bluetone.cn/images/bg.jpeg',
     name: 'BlueTone',
     slogan: '死亡如风,常伴吾身~',
   },

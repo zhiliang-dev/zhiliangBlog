@@ -4,7 +4,7 @@
       <img
         :src="blogger.avatar"
         alt="头像"
-        title="我好看吗"
+        title="To be, or not to be, that is the question"
       />
     </div>
     <div
